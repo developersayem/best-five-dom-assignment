@@ -10,6 +10,7 @@ function disableButton(e) {
 function SelectedItems(olSelector, nameSelector) {
   const selectedItems = document.getElementById("olSelector");
   const li = document.createElement("li");
+  li.classList.add("Items");
   const text = document.createTextNode(nameSelector);
   li.appendChild(text);
   if (olSelector.childNodes.length <= 5) {
